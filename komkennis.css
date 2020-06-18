@@ -1,0 +1,1018 @@
+* {
+    font-family: Avenir;
+}
+
+
+/* Header en menu */
+
+.parallax4 {
+    position: relative;
+    background: url(img/opendagbckgrnd.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 850px;
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.navbar {
+    display: flex;
+    float: left;
+}
+
+.navbar img {
+    width: 60px;
+}
+
+.header div:nth-of-type(1) {
+    background: transparent;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+}
+
+.header_tekst {
+    width: 100%;
+    padding: 10% 0 14% 0;
+}
+
+.header ul {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header li a {
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+.header a {
+    padding: 10px 20px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.header a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.header a::before {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+/*kom kennis maken informatie open dagen etc*/
+
+.box2 {
+    width: 650px;
+    height: 4px;
+    background-image: linear-gradient(to right, #1AA1E1 10%, #E5312C);
+    position: relative;
+    top: 130px;
+    border-radius: 3px;
+}
+
+.informatie h3 {
+    color: #253A4B;
+    font-size: 70px;
+    position: relative;
+    font-weight: bold;
+    font-family: Avenir;
+    top: 35px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.informatie h4 {
+    color: #253A4B;
+    font-size: 36px;
+    position: relative;
+    font-family: Avenir;
+    top: -10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.informatie p14 {
+    position: relative;
+    left: 200px;
+    top: 0px;
+    font-family: Avenir;
+    font-size: 25px;
+    text-decoration: underline #E5312C;
+}
+
+.informatie p15 {
+    position: relative;
+    left: 510px;
+    top: 0px;
+    font-family: Avenir;
+    font-size: 25px;
+    text-decoration: underline #1AA1E1;
+}
+
+.informatie p16 {
+    position: relative;
+    left: 780px;
+    top: 0px;
+    font-size: 25px;
+    text-decoration: underline #E5312C;
+}
+
+.informatie .columns p17 {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+    width: 1300px;
+    font-size: 23px;
+    font-family: Avenir;
+    column-count: 3;
+    text-align: left;
+    column-rule: 2px solid lightslategray;
+    column-gap: 3em;
+    padding-bottom: 150px;
+}
+
+
+/*Kom kennis maken leerling reviews*/
+
+.parallax {
+    position: relative;
+    top: 0px;
+    background: url(img/classbckgrnd.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 850px;
+    width: 100%;
+}
+
+.reviews p18 {
+    position: relative;
+    top: 30px;
+    font-family: Avenir;
+    font-size: 25px;
+    left: 200px;
+    text-decoration: underline #1AA1E1;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+
+.reviews p19 {
+    position: relative;
+    top: 150px;
+    font-family: Avenir;
+    font-size: 23px;
+    left: -20px;
+    display: inline-block;
+    width: 1200px;
+    color: white;
+}
+
+
+/* Review van studenten kaart draaien kaart 1*/
+
+.maincontainerreview1 {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    left: 22%;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.reviewcard1 {
+    position: absolute;
+    top: -350px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.reviewcard1:hover {
+    transform: rotateY(180deg);
+}
+
+.frontcard1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: whitesmoke;
+    color: #333;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    text-align: center;
+}
+
+.backcard1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: lightgray;
+    color: #333;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+
+/*Styling kaart 1*/
+
+.frontcard1 h10 {
+    position: relative;
+    top: 300px;
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.backcard1 h10 {
+    position: relative;
+    top: -70px;
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.frontcard1 p22 {
+    font-family: Avenir;
+    position: relative;
+    top: -30px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.backcard1 p22 {
+    font-family: Avenir;
+    position: relative;
+    top: 140px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+
+/* Review van studenten kaart draaien kaart 2*/
+
+.maincontainerreview2 {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    left: 50%;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.reviewcard2 {
+    position: absolute;
+    top: -350px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.reviewcard2:hover {
+    transform: rotateY(180deg);
+}
+
+.frontcard2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: whitesmoke;
+    color: #333;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    text-align: center;
+}
+
+.backcard2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: lightgray;
+    color: #333;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+
+/*Styling kaart 2*/
+
+.frontcard2 h11 {
+    position: relative;
+    top: 300px;
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.backcard2 h11 {
+    position: relative;
+    top: -70px;
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.frontcard2 p23 {
+    font-family: Avenir;
+    position: relative;
+    top: -30px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.backcard2 p23 {
+    font-family: Avenir;
+    position: relative;
+    top: 140px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+
+/* Review van studenten kaart draaien kaart 3*/
+
+.maincontainerreview3 {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    left: 78%;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.reviewcard3 {
+    position: absolute;
+    top: -350px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.reviewcard3:hover {
+    transform: rotateY(180deg);
+}
+
+.frontcard3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: whitesmoke;
+    color: #333;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    text-align: center;
+}
+
+.backcard3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: lightgray;
+    color: #333;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+
+/*Styling kaart 3*/
+
+.frontcard3 h12 {
+    position: relative;
+    top: 300px;
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.backcard3 h12 {
+    position: relative;
+    top: -70px;
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.frontcard3 p25 {
+    font-family: Avenir;
+    position: relative;
+    top: -30px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+.backcard3 p25 {
+    font-family: Avenir;
+    position: relative;
+    top: 140px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+}
+
+
+/* Kom kennis maken aanmelden open/meeloop-dagen en proefstuderen*/
+
+.koptekstdraaimee {
+    position: relative;
+    top: 100px;
+    color: #253A4B;
+    font-size: 70px;
+    font-weight: bold;
+    left: center;
+}
+
+.boxdraaimee {
+    width: 850px;
+    height: 4px;
+    background-image: linear-gradient(to right, #1AA1E1 10%, #E5312C);
+    position: relative;
+    top: 100px;
+    border-radius: 3px;
+}
+
+.ondertekstdraaimee {
+    color: #253A4B;
+    font-size: 36px;
+    position: relative;
+    font-family: Avenir;
+    top: 125px;
+}
+
+.aanmelden {
+    width: 250px;
+    height: 50px;
+    position: relative;
+    background-color: #E5312C;
+    border: none;
+    border-radius: 100px;
+    top: 400px;
+    right: 220px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+.aanmelden:hover {
+    cursor: pointer;
+    background-color: #1AA1E1;
+}
+
+.meedraaien {
+    width: 250px;
+    height: 50px;
+    position: relative;
+    background-color: #E5312C;
+    border-radius: 10px;
+    border: none;
+    border-radius: 100px;
+    top: 400px;
+    left: 500px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+.meedraaien:hover {
+    cursor: pointer;
+    background-color: #1AA1E1;
+}
+
+.opendag {
+    width: 300px;
+    height: 50px;
+    position: relative;
+    background-color: #1AA1E1;
+    border-radius: 10px;
+    border: none;
+    border-radius: 100px;
+    top: 400px;
+    right: 275px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+.opendag:hover {
+    cursor: pointer;
+    background-color: #E5312C;
+}
+
+.draaimeetext {
+    position: relative;
+    top: 135px;
+    left: 12.5%;
+    display: inline-block;
+    width: 1200px;
+    font-family: Avenir;
+    font-size: 25px;
+}
+
+
+/*snelkoppeling naar blog en showcase van draai een dagje mee*/
+
+.parallax2 {
+    position: relative;
+    top: 380px;
+    background: url(img/classbckgrnd2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 850px;
+    width: 100%;
+}
+
+.snelkoppeling h7 {
+    position: relative;
+    top: 100px;
+    font-family: Avenir;
+    font-size: 25px;
+    left: 200px;
+    text-decoration: underline #1AA1E1;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.snelkoppeling p25 {
+    position: relative;
+    top: 180px;
+    font-family: Avenir;
+    font-size: 23px;
+    left: -82px;
+    display: inline-block;
+    width: 1200px;
+    color: white;
+}
+
+.snelkoppeling .dot {
+    position: relative;
+    top: 350px;
+    left: 200px;
+    height: 300px;
+    width: 300px;
+    background-color: #E5312C;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.snelkoppeling .dot1 {
+    position: relative;
+    top: 350px;
+    left: 600px;
+    height: 300px;
+    width: 300px;
+    background-color: #E5312C;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.snelkoppeling p26 {
+    position: relative;
+    top: 160px;
+    left: -320px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.snelkoppeling p27 {
+    position: relative;
+    top: 230px;
+    left: -440px;
+    color: white;
+    font-weight: normal;
+    font-size: 23px;
+    display: inline-block;
+    width: 400px;
+}
+
+.snelkoppeling p28 {
+    position: relative;
+    top: 160px;
+    left: -120px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.snelkoppeling p29 {
+    position: relative;
+    top: 230px;
+    left: -180px;
+    color: white;
+    font-weight: normal;
+    font-size: 23px;
+    display: inline-block;
+    width: 320px;
+}
+
+.snelkoppeling .smalldot {
+    position: relative;
+    top: 375px;
+    left: -1120px;
+    height: 100px;
+    width: 100px;
+    background-color: #1AA1E1;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.snelkoppeling .smalldot1 {
+    position: relative;
+    top: 270px;
+    left: 1100px;
+    height: 100px;
+    width: 100px;
+    background-color: #1AA1E1;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.snelkoppeling .showcase {
+    position: relative;
+    top: 225px;
+    left: 330px;
+    z-index: 1;
+    border: none;
+    background: transparent;
+    font-family: Avenir;
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+}
+
+.snelkoppeling .blog {
+    position: relative;
+    top: 225px;
+    left: 800px;
+    z-index: 1;
+    border: none;
+    background: transparent;
+    font-family: Avenir;
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Kopje "Iets voor jou" van "Kom kennismaken" */
+
+.box {
+    width: 650px;
+    height: 4px;
+    background-image: linear-gradient(to right, #1AA1E1 10%, #E5312C);
+    position: relative;
+    top: 550px;
+    border-radius: 3px;
+}
+
+.ietsvoorjou h1 {
+    color: #253A4B;
+    font-size: 70px;
+    position: relative;
+    font-weight: bold;
+    font-family: Avenir;
+    top: 450px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ietsvoorjou h2 {
+    color: #253A4B;
+    font-size: 36px;
+    position: relative;
+    font-family: Avenir;
+    top: 440px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.iconcheck {
+    position: relative;
+    top: 550px;
+    left: 270px;
+}
+
+.iconcheck2 {
+    position: relative;
+    top: 700px;
+    left: 235px;
+}
+
+.iconcheck3 {
+    position: relative;
+    top: 853px;
+    left: 200px;
+}
+
+.ietsvoorjou p5 {
+    position: relative;
+    text-align: left;
+    left: 220px;
+    top: 545px;
+    color: #253A4B;
+    font-family: Avenir;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    width: 1200px;
+}
+
+.ietsvoorjou p6 {
+    position: relative;
+    left: 270px;
+    top: 555px;
+    color: #253A4B;
+    font-size: 23px;
+    font-family: Avenir;
+    display: inline-block;
+    width: 1200px;
+    text-align: left;
+}
+
+.ietsvoorjou p7 {
+    text-align: left;
+    position: relative;
+    left: 320px;
+    top: 628px;
+    font-size: 25px;
+    color: #253A4B;
+    font-weight: bold;
+    font-family: Avenir;
+    display: inline-block;
+    width: 1200px;
+}
+
+.ietsvoorjou p8 {
+    width: 1200px;
+    position: relative;
+    left: 270px;
+    top: 640px;
+    font-size: 23px;
+    font-family: Avenir;
+    display: inline-block;
+    text-align: left;
+}
+
+.ietsvoorjou p9 {
+    display: inline-block;
+    width: 1200px;
+    position: relative;
+    left: 320px;
+    top: 685px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #253A4B;
+}
+
+.ietsvoorjou p10 {
+    display: inline-block;
+    width: 1200px;
+    position: relative;
+    left: 270px;
+    top: 705px;
+    font-size: 23px;
+    font-family: Avenir;
+}
+
+.ietsvoorjou p11 {
+    display: inline-block;
+    width: 1200px;
+    position: relative;
+    left: 270px;
+    top: 850px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #253A4B;
+    text-decoration: underline #E5312C;
+}
+
+.ietsvoorjou p12 {
+    display: inline-block;
+    width: 1200px;
+    position: relative;
+    left: 270px;
+    top: 890px;
+    font-size: 23px;
+    color: #253A4B;
+}
+
+.ietsvoorjou .toelatingseisen {
+    display: inline-block;
+    width: 1200px;
+    position: relative;
+    left: -140px;
+    top: 940px;
+    font-size: 23px;
+    color: #253A4B;
+    text-decoration: underline #253A4B;
+    border: none;
+    background-color: white;
+}
+
+
+/* Tijdelijke plekopvulling matchingstest*/
+
+.parallax3 {
+    position: relative;
+    top: 1100px;
+    background: url(img/projectpic2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 850px;
+    width: 100%;
+}
+
+
+/*Social media buttons Hogeschool Utrecht*/
+
+.middle {
+    position: relative;
+    top: 1280px;
+    left: 0%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn i {
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.btn:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
+/* Social media button text "Volg ons ook op social media"*/
+
+.middle p {
+    position: relative;
+    bottom: 155px;
+    left: -57px;
+}
+
+.middle p1 {
+    color: #E5312C;
+    position: relative;
+    bottom: 193px;
+    left: 51px;
+    font-weight: bold;
+}
+
+.middle p2 {
+    color: #1AA1E1;
+    position: relative;
+    bottom: 193.5px;
+    left: 51px;
+    font-weight: bold;
+}
